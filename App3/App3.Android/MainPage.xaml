@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App3"
+             x:Class="App3.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <!--Margin:  left, top, right, bottom -->
+
+      <Grid x:Name="grid1">
+            
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="40" x:Name="row_entryField"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                
+            </Grid.RowDefinitions>
+            <Entry Keyboard="Telephone" Placeholder="!!!!!" Grid.Row="0" Grid.Column="0" TextColor="Black" Grid.ColumnSpan="2" x:Name="entryField"/>
+            <Button Text="Connect" Grid.Row="0" Grid.Column="2" TextColor="Black" BackgroundColor="Beige" x:Name="connectBtn" Clicked="ConnectBtn_Clicked"/>
+
+            <Image  Grid.Row="1" Grid.Column="0" HeightRequest="70" WidthRequest="70" Source="volumeDown.png" x:Name="VolumeDown_Image" />
+            <Button Grid.Row="1" Grid.Column="0" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="VolumeDown_Clicked" x:Name="VolumeDown_Button"/>
+
+            <Image Grid.Row="1" Grid.Column="1" HeightRequest="70" WidthRequest="70" Source="volumeUp.png" x:Name="VolumeUp_Image" />
+            <Button Grid.Row="1" Grid.Column="1" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="VolumeUp_Clicked" x:Name="VolumeUp_Button" />
+
+            <Image Grid.Row="1" Grid.Column="2" HeightRequest="70" WidthRequest="70" Source="playPause.png" x:Name="PlayPause_Image"/>
+            <Button Grid.Row="1" Grid.Column="2" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="PlayPause_Clicked" x:Name="PlayPause_Button" />
+
+            <Image Grid.Row="2" Grid.Column="1" HeightRequest="70" WidthRequest="70" Source="up.png" x:Name="Up_Image"/>
+            <Button Grid.Row="2" Grid.Column="1" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="Up_Clicked" x:Name="Up_Button" />
+
+            <Image Grid.Row="3" Grid.Column="0" HeightRequest="70" WidthRequest="70" Source="left.png" x:Name="Left_Image"/>
+            <Button Grid.Row="3" Grid.Column="0" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="Left_Clicked" x:Name="Left_Button" />
+
+            <Image Grid.Row="3" Grid.Column="1" HeightRequest="70" WidthRequest="70" Source="enter.png" x:Name="Enter_Image"/>
+            <Button Grid.Row="3" Grid.Column="1" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="Enter_Clicked" x:Name="Enter_Button" />
+
+            <Image Grid.Row="3" Grid.Column="2" HeightRequest="70" WidthRequest="70" Source="right.png" x:Name="Right_Image"/>
+            <Button Grid.Row="3" Grid.Column="2" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="Right_Clicked" x:Name="Right_Button" />
+
+            <Image Grid.Row="4" Grid.Column="1" HeightRequest="70" WidthRequest="70" Source="down.png" x:Name="Down_Image"/>
+            <Button Grid.Row="4" Grid.Column="1" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="Down_Clicked" x:Name="Down_Button" />
+            
+            <Image Grid.Row="4" Grid.Column="0" HeightRequest="70" WidthRequest="70" Source="retour.png" x:Name="Retour_Image"/>
+            <Button Grid.Row="4" Grid.Column="0" HeightRequest="70" WidthRequest="70" BackgroundColor="Transparent" Clicked="Retour_Clicked" x:Name="Retour_Button" />
+        </Grid>
+
+        <ScrollView VerticalScrollBarVisibility="Always" HorizontalScrollBarVisibility="Always" Orientation="Horizontal">
+
+            <Grid x:Name="grid2">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="70" />
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" HeightRequest="70" WidthRequest="70"  x:Name="button1" Clicked="buttonTestMethod" BackgroundColor="Blue" Text="TEST!"/>
+
+                <Image Grid.Row="0" Grid.Column="1" HeightRequest="70" WidthRequest="70" Source="retour.png" x:Name="image1"/>
+                <Label Grid.Row="0" Grid.Column="2" HeightRequest="70" WidthRequest="70" x:Name="IpLabel"/>
+
+
+            </Grid>
+        </ScrollView>
+
+
+    </StackLayout>
+    
+    
+
+</ContentPage>
